@@ -1,0 +1,75 @@
+# DRIVEBASE 🚗
+
+**DRIVEBASE** 是以 **AGENTS.md 作為 AI 開發規則**的汽車百科與雙車規格比較靜態網站。第一版展示 Toyota GR86、Subaru BRZ、Mazda MX-5 三個車系，提供搜尋、篩選、詳細規格與並列比較。
+
+## 網站功能
+
+- 首頁：品牌形象、動態車款數量、精選車系。
+- Explore：品牌／車系搜尋、品牌與車身型式篩選。
+- Detail：一個 `car.html` 頁面依 ID 載入不同車系、版本與來源。
+- Compare：任選兩個版本並列規格、顯示可比較欄位的差異。
+- 關於頁：資料政策、照片授權、Agent 使用說明。
+
+## 部署與本機預覽
+
+本專案不需要 npm 或後端。請使用 Python 內建 HTTP server（避免 `file://` 禁止 `fetch` JSON）：
+
+```bash
+cd drivebase
+python -m http.server 8000
+```
+
+瀏覽 `http://localhost:8000/`。在 GitHub 上傳所有專案檔案，進入 **Settings → Pages → Deploy from a branch → main / (root) → Save**。公開網址通常是 `https://<github-user>.github.io/<repository>/`；確切網址以 GitHub Pages 顯示為準。這個 ZIP **不代表已自動上傳或部署**。
+
+## 專案檔案
+
+```text
+drivebase/
+├── AGENTS.md
+├── README.md
+├── index.html
+├── explore.html
+├── car.html
+├── compare.html
+├── about.html
+├── css/style.css
+├── js/app.js
+├── data/brands.json
+├── data/models.json
+├── data/variants.json
+├── assets/cars/*.svg
+├── tests/validate.py
+└── docs/agent-validation.md
+```
+
+## 實際資料與限制
+
+- Toyota GR86：採用台灣 Toyota 官方 2026/7 起生產 **6MT Brembo** 版規格，確定數值才填入。
+- Subaru BRZ：採台灣官網列示 **2.4 MT ES**；官網展示未明確標年式，因此 `year=null`；未逐項確認的規格保持空值。
+- Mazda MX-5：採台灣 Mazda 官方 2025 年車型規配表作為版本來源；未逐項核對的數值保持空值。
+- 所有跑車圖為原創 SVG 概念示意，**非真實車款照片**。
+- 規格並非即時資料，請以官方最新公告及實車為準。
+
+## 開發 AI 的規則
+
+`AGENTS.md` 定義了資料 Schema、命名規則、UI 設計、資料驗證、修改保護及驗收 SOP。新增一台車通常只需更新 `data/`，共用頁面會自動更新。
+
+**可重複使用測試範例：** 在新的 AI 專案對話中交辦「請閱讀 AGENTS.md，新增指定台灣市場年份及版本的 Honda Civic Type R，保留現有車款與 UI，驗證搜尋、詳細頁與比較功能，回報真實測試結果」。測試後再把 Commit 與截圖填入 `docs/agent-validation.md`。
+
+## 驗證
+
+```bash
+python tests/validate.py
+node --check js/app.js
+```
+
+驗證器檢查 JSON 結構、ID 唯一性、資料關聯、來源 URL 及圖片路徑。瀏覽器操作仍應自行於 localhost 與 GitHub Pages 實際檢查。
+
+## GitHub Pages 預計交付連結
+
+- Repository：部署後由作者填寫。
+- GitHub Pages：部署後由作者填寫。
+
+## 作業說明重點
+
+這次重點不是單次產生網站，而是**建立可重用的規則**。新的 AI 讀取 `AGENTS.md` 後，知道如何驗證資料、建立 Brand/Model/Variant、維持相同 UI 與測試現有功能，讓新車款能納入既有搜尋與比較系統。
