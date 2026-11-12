@@ -1,0 +1,5 @@
+[
+  {"id":"gr86","brand_id":"toyota","name":"GR86","body_type":"coupe","tagline":"後驅跑車的純粹樂趣","description":"GR86 以水平對臥引擎與後輪驅動為特色，重視駕駛參與感與操控表現。","image_path":"assets/cars/gr86.svg","image_credit":"DRIVEBASE 原創向量示意圖（非原車照片）","featured":true},
+  {"id":"brz","brand_id":"subaru","name":"BRZ","body_type":"coupe","tagline":"專注平衡的雙門跑車","description":"BRZ 採水平對臥引擎與後輪驅動配置，強調低重心與駕駛體驗。","image_path":"assets/cars/brz.svg","image_credit":"DRIVEBASE 原創向量示意圖（非原車照片）","featured":true},
+  {"id":"mx5","brand_id":"mazda","name":"MX-5","body_type":"roadster","tagline":"輕巧的開篷駕駛體驗","description":"MX-5 是 Mazda 的雙座敞篷跑車車系，以輕量化與敞篷駕駛為代表特色。","image_path":"assets/cars/mx5.svg","image_credit":"DRIVEBASE 原創向量示意圖（非原車照片）","featured":true}
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id":"gr86-tw-2026-6mt-brembo","model_id":"gr86","year":2026,"market":"TW","trim":"6MT Brembo（2026年7月起生產規格）","transmission":"6MT","drivetrain":"RWD","fuel_type":"gasoline",
+    "specs":{"displacement_cc":2387,"power_kw":null,"power_ps":234,"torque_nm":null,"torque_kgm":25.5,"length_mm":4265,"width_mm":1775,"height_mm":1310,"wheelbase_mm":2575,"weight_kg":1275,"fuel_economy_km_l":13.0,"fuel_cycle":"EU 1999/100/EC"},
+    "sources":[{"name":"Toyota Taiwan GR86 完整規配（2026/7 起生產）","url":"https://www.toyota.com.tw/showroom/GR86/fullsepc.aspx","accessed":"2026-11-12"},{"name":"Toyota Taiwan GR86 產品頁（含規配適用說明）","url":"https://www.toyota.com.tw/showroom/GR86/","accessed":"2026-11-12"}],"status":"published"
+  },
+  {
+    "id":"brz-tw-current-24-mt-es","model_id":"brz","year":null,"market":"TW","trim":"2.4 MT ES（官網現行展示，年式未註明）","transmission":"6MT","drivetrain":"RWD","fuel_type":"gasoline",
+    "specs":{"displacement_cc":null,"power_kw":null,"power_ps":null,"torque_nm":null,"torque_kgm":null,"length_mm":null,"width_mm":null,"height_mm":null,"wheelbase_mm":null,"weight_kg":null,"fuel_economy_km_l":null,"fuel_cycle":null},
+    "sources":[{"name":"Subaru Taiwan BRZ 車系與車型展示","url":"https://www.subaru.asia/tw/zh/brz/","accessed":"2026-11-12"}],"status":"published"
+  },
+  {
+    "id":"mx5-tw-2025-softtop","model_id":"mx5","year":2025,"market":"TW","trim":"MX-5 軟頂（2025 年規配表）","transmission":null,"drivetrain":null,"fuel_type":"gasoline",
+    "specs":{"displacement_cc":null,"power_kw":null,"power_ps":null,"torque_nm":null,"torque_kgm":null,"length_mm":null,"width_mm":null,"height_mm":null,"wheelbase_mm":null,"weight_kg":null,"fuel_economy_km_l":null,"fuel_cycle":null},
+    "sources":[{"name":"Mazda Taiwan 2025 MX-5 官方規格表","url":"https://www.mazda.com.tw/globalassets/cars/mx-5/pdf/2025_mazda-mx-5_spec_20250416.pdf","accessed":"2026-11-12"}],"status":"published"
+  }
+]

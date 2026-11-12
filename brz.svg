@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 510" role="img" aria-label="原創跑車輪廓示意">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#222937"/><stop offset="1" stop-color="#0c111b"/></linearGradient><linearGradient id="paint" x2="0" y2="1"><stop stop-color="#4da3e5"/><stop offset="1" stop-color="#2b7cc7"/></linearGradient><linearGradient id="window"><stop stop-color="#374b63"/><stop offset="1" stop-color="#101823"/></linearGradient></defs>
+<rect width="900" height="510" fill="url(#bg)"/><ellipse cx="457" cy="407" rx="338" ry="35" fill="#040609" opacity=".64"/>
+<path d="M114 332 Q128 286 214 276 L291 263 Q330 198 396 181 L565 177 Q637 188 685 258 L772 280 Q809 285 816 329 L807 373 L105 373 Z" fill="url(#paint)" stroke="#ffffff" stroke-opacity=".26" stroke-width="3"/>
+<path d="M310 260 Q352 203 401 199 L558 196 Q605 201 656 258 Z" fill="url(#window)" stroke="#9ea8b5" stroke-width="3"/>
+<path d="M493 199 L506 260" stroke="#1f2a39" stroke-width="8"/>
+<path d="M117 334 L240 322 M707 309 L800 326" stroke="#f8fafc" opacity=".28" stroke-width="7"/>
+<path d="M127 316 L190 301 L180 322 L122 331 Z" fill="#f2f7ff" opacity=".8"/><path d="M767 308 L805 319" stroke="#ff5d60" stroke-width="10"/>
+<circle cx="273" cy="368" r="65" fill="#080b11"/><circle cx="273" cy="368" r="40" fill="#aeb7c4"/><circle cx="273" cy="368" r="21" fill="#28303c"/>
+<circle cx="683" cy="368" r="65" fill="#080b11"/><circle cx="683" cy="368" r="40" fill="#aeb7c4"/><circle cx="683" cy="368" r="21" fill="#28303c"/>
+<path d="M120 373 L804 373" stroke="#171b22" stroke-width="8"/>
+<text x="46" y="62" fill="#e7ecf4" font-size="20" font-family="Arial,sans-serif" letter-spacing="7">DRIVEBASE / CONCEPT</text>
+<text x="46" y="465" fill="#9ba6b8" font-size="17" font-family="Arial,sans-serif">ORIGINAL VECTOR ILLUSTRATION · NOT A VEHICLE PHOTO</text>
+</svg>
