@@ -56,20 +56,3 @@ drivebase/
 
 **可重複使用測試範例：** 在新的 AI 專案對話中交辦「請閱讀 AGENTS.md，新增指定台灣市場年份及版本的 Honda Civic Type R，保留現有車款與 UI，驗證搜尋、詳細頁與比較功能，回報真實測試結果」。測試後再把 Commit 與截圖填入 `docs/agent-validation.md`。
 
-## 驗證
-
-```bash
-python tests/validate.py
-node --check js/app.js
-```
-
-驗證器檢查 JSON 結構、ID 唯一性、資料關聯、來源 URL 及圖片路徑。瀏覽器操作仍應自行於 localhost 與 GitHub Pages 實際檢查。
-
-## GitHub Pages 預計交付連結
-
-- Repository：部署後由作者填寫。
-- GitHub Pages：部署後由作者填寫。
-
-## 作業說明重點
-
-這次重點不是單次產生網站，而是**建立可重用的規則**。新的 AI 讀取 `AGENTS.md` 後，知道如何驗證資料、建立 Brand/Model/Variant、維持相同 UI 與測試現有功能，讓新車款能納入既有搜尋與比較系統。
